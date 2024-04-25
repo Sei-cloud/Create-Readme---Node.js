@@ -23,15 +23,13 @@ Install Node.js after that install inquirer package version 8.2.4 using command 
 
 Users can create Readme file by just answering few questions on terminal.
 
-Watch the video tutorial [here](https://vimeo.com/939188276?share=copy).
-
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Contributing
 
-Others can contribute to this project via Github
+Others can contribute to this project via Github.
 
 ## Tests
 
