@@ -17,3 +17,4 @@
 Watch the video tutorial [here](https://vimeo.com/939188276?share=copy).
 
 
+[Email me](mailto:your_email@example.com)

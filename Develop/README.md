@@ -4,7 +4,7 @@
 
 ## Description
 
-Generating Readme.md file from terminal using node.js
+Generating Readme file from the terminal using node.js
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ Generating Readme.md file from terminal using node.js
 
 ## Installation
 
-Install Node.js after that install inquirer package version 8.2.4 using command "npm inquirer@8.2.4"
+Install Node.js and intall inquirer package version 8.2.4 using command "npm i inquirer@8.2.4" on terminal
 
 ## Usage
 
-Users can create Readme file by just answering few questions on terminal.
+When a user wants to quickly generate Readme file by just answering few questions.
 
 ## License
 
@@ -33,9 +33,9 @@ Others can contribute to this project via Github.
 
 ## Tests
 
-Users can test this project via using command "node index.js" on terminal.
+To test this project on the terminal use command "node index.js"
 
 ## Questions
 
-For questions about the project, please feel free to contact [Sei-Cloud](https://github.com/Sei-Cloud).
+For questions about the project, please feel free to contact [Sei-Cloud](https://github.com/Sei-Cloud) or [Email me](mailto:rocketsei.009@gmail.com).
 

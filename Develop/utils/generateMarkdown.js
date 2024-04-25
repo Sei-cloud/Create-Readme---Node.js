@@ -40,8 +40,7 @@ function generateMarkdown(data) {
   markdown += renderLicenseSection(data.license) + '\n\n';
   markdown += `## Contributing\n\n${data.contributing}\n\n`;
   markdown += `## Tests\n\n${data.tests}\n\n`;
-  markdown += `## Questions\n\nFor questions about the project, please feel free to contact [${data.username}](https://github.com/${data.username}).\n\n`;
-
+  markdown += `## Questions\n\nFor questions about the project, please feel free to contact [${data.username}](https://github.com/${data.username}) or [Email me](mailto:${data.email}).\n\n`;
   return markdown;
 }
 
