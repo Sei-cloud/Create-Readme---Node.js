@@ -26,6 +26,10 @@ This project is licensed under the [${license} License]${renderLicenseLink(licen
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
+  const videoURL = 'https://vimeo.com/939174876?share=copy';
+  let markdown = `# ${data.title}\n\n`;
+  markdown += `## Usage\n\n`;
+  markdown += `Watch the video tutorial [here](${videoURL}).\n\n`;
   return `# ${data.title}
 
 ${renderLicenseBadge(data.license)}
@@ -48,7 +52,6 @@ ${data.description}
 ${data.installation}
 
 ## Usage
-
 ${data.usage}
 
 ${renderLicenseSection(data.license)}
