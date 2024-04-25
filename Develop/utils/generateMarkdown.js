@@ -1,7 +1,7 @@
 // Function to generate a license badge based on the license type
 function renderLicenseBadge(license) {
   if (!license) {
-      return '';
+    return '';
   }
   return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`;
 }
@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
 // Function to return the license link
 function renderLicenseLink(license) {
   if (!license) {
-      return '';
+    return '';
   }
   return `(https://opensource.org/licenses/${license})`;
 }
@@ -17,7 +17,7 @@ function renderLicenseLink(license) {
 // Function to generate the license section of README
 function renderLicenseSection(license) {
   if (!license) {
-      return '';
+    return '';
   }
   return `## License
 
@@ -26,49 +26,27 @@ This project is licensed under the [${license} License]${renderLicenseLink(licen
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
-  const videoURL = 'https://vimeo.com/939174876?share=copy';
+  const videoURL = 'https://vimeo.com/939188276?share=copy';
+
   let markdown = `# ${data.title}\n\n`;
-  markdown += `## Usage\n\n`;
+
+
+  // Other sections...
+
+  // License badge and section
+  markdown += `${renderLicenseBadge(data.license)}\n\n`;
+  markdown += `## Description\n\n${data.description}\n\n`;
+  markdown += `## Table of Contents\n\n- [Installation](#installation)\n- [Usage](#usage)\n- [License](#license)\n- [Contributing](#contributing)\n- [Tests](#tests)\n- [Questions](#questions)\n\n`;
+  markdown += `## Installation\n\n${data.installation}\n\n`;
+  markdown += `## Usage\n\n${data.usage}\n\n`;
+  // Usage section with fixed video URL
   markdown += `Watch the video tutorial [here](${videoURL}).\n\n`;
-  return `# ${data.title}
+  markdown += renderLicenseSection(data.license) + '\n\n';
+  markdown += `## Contributing\n\n${data.contributing}\n\n`;
+  markdown += `## Tests\n\n${data.tests}\n\n`;
+  markdown += `## Questions\n\nFor questions about the project, please feel free to contact [${data.username}](https://github.com/${data.username}).\n\n`;
 
-${renderLicenseBadge(data.license)}
-
-## Description
-
-${data.description}
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
-## Installation
-
-${data.installation}
-
-## Usage
-${data.usage}
-
-${renderLicenseSection(data.license)}
-
-## Contributing
-
-${data.contributing}
-
-## Tests
-
-${data.tests}
-
-## Questions
-
-For questions about the project, please feel free to contact [${data.username}](https://github.com/${data.username}).
-
-`;
+  return markdown;
 }
 
 module.exports = generateMarkdown;
