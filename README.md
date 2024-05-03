@@ -11,10 +11,16 @@
 - On the terminal use the command "node index.js".
 - Then, it will ask you a series of questions such as title, description, license etc.
 - After answering all the questions, it will automatically create a Readme.md file for you. 
+![Prompt screenshot](./Assets/Prompt.png)
 
 ## If you're still struggling 
 
 Watch the video tutorial [here](https://vimeo.com/939188276?share=copy).
 
+## Sample
+
+![Generated Readme](./Assets/Generated%20Readme.png)
+
 
 Github URL: https://github.com/Sei-cloud/Create-Readme---Node.js
+

@@ -1,10 +1,10 @@
-# Create-Readme---Node.js
+# Create-SVG
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]
 
 ## Description
 
-Generating Readme file from the terminal using node.js
+This Node.js app creates a simple logo by generating .SVG files with shapes and texts.
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ Generating Readme file from the terminal using node.js
 
 ## Installation
 
-Install Node.js and intall inquirer package version 8.2.4 using command "npm i inquirer@8.2.4" on terminal
+Clone this repository:   ```bash git clone git@github.com:Sei-cloud/Create-SVG-.git
 
 ## Usage
 
-When a user wants to quickly generate Readme file by just answering few questions.
+Make sure node.js is installed on your machine, install dependencies by npm install 
 
 ## License
 
@@ -29,11 +29,11 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Contributing
 
-Others can contribute to this project via Github.
+Other can contribute to this project via Github
 
 ## Tests
 
-To test this project on the terminal use command "node index.js"
+Test this project using jest and run test files
 
 ## Questions
 
